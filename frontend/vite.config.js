@@ -6,8 +6,7 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      // Forward all /api requests to the Express backend
-      '/api': 'http://localhost:5000'
+      '/api': 'http://localhost:5000'  // only used locally
     }
   }
 })
